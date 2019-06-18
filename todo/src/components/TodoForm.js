@@ -26,6 +26,6 @@ TodoForm.propTypes = {
 };
 
 export default connect(
-  {},
+  null,
   { addTask: addTaskAction },
 )(TodoForm);
