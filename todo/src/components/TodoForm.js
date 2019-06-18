@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { addTask } from '../actions';
+import { addTask as addTaskAction } from '../actions';
 
 const TodoForm = ({ addTask }) => {
   const inputRef = React.createRef();
@@ -27,5 +27,5 @@ TodoForm.propTypes = {
 
 export default connect(
   {},
-  { addTask },
+  { addTask: addTaskAction },
 )(TodoForm);
